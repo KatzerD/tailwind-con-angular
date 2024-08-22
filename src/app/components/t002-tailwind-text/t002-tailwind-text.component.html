@@ -1,0 +1,61 @@
+<h2 class="text-2xl font-bold">Font Family</h2>
+<section>
+  <div>
+    <p>Por defecto Tailwind tiene solo 3 fuentes tipograficas</p>
+
+    <div class="bg-white p-4 m-4 max-w-xl rounded-lg border border-gray-400">
+      <span class="text-xs font-mono font-semibold text-blue-500"
+        >font-sans</span
+      >
+      <p class="font-sans">Texto tipografico de ejemplo</p>
+
+      <span class="text-xs font-mono font-semibold text-blue-500"
+        >font-serif</span
+      >
+      <p class="font-serif">Texto tipografico de ejemplo</p>
+
+      <span class="text-xs font-mono font-semibold text-blue-500"
+        >font-mono</span
+      >
+      <p class="font-mono">Texto tipografico de ejemplo</p>
+    </div>
+
+    <div>
+      <p>Hover, Focus y otros estados...</p>
+
+      <div class="bg-white p-4 m-4 max-w-xl rounded-lg border border-gray-400">
+        <span class="text-xs font-mono font-semibold text-blue-500"
+          >hover:font-[sans,serif,mono,...]</span
+        >
+        <p class="font-sans hover:font-serif hover:text-lg">
+          Este texto tiene un Hover
+        </p>
+
+        <span class="text-xs font-mono font-semibold text-blue-500"
+          >hover:font-[sans,serif,mono,...]</span
+        >
+        <p class="font-mono font-normal md:font-sans md:font-bold">
+          Este texto tiene un Media Query
+        </p>
+      </div>
+    </div>
+
+    <div>
+        <p>Customizacion de fuentes</p>
+  
+        <div class="bg-white p-4 m-4 max-w-xl rounded-lg border border-gray-400">
+          <span>module.exports = &#123;</span>
+                content: ["./src/**/*.&#123;html,ts&#125;"],
+                theme: &#123;
+                  extend: &#123;&#125;,
+                  fontFamily: &#123;
+                    headers: ["Oswald", "Arial"],
+                    body: ["Helvetica", '"Open sans"', "Arial"],
+                    &#125;,
+                  &#125;,
+                plugins: [],
+            &#125;;
+        </div>
+      </div>
+  </div>
+</section>
